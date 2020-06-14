@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Signup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" style="background: url('https://images.unsplash.com/photo-1590493965042-c37d4d6962be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80') no-repeat; background-size: 100% 100%;">
+
+    <nav class="navbar navbar-default navbar-fixed-top" style="background: wheat; box-shadow: -3px 4px 30px 3px rgba(0,0,0, .5)">
+    <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="index.html#myPage">WATIGA</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html#login"><b>LOGIN</b></a></li>
+            <li><a href="index.html#about"><b>ABOUT</b></a></li>
+            <li><a href="index.html#services"><b>SERVICES</b></a></li>
+            <li><a href="index.html#contact"><b>CONTACT</b></a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="login1">
+        <form class="box" method="post" id="form_id" autocomplete="off" action="signup.php" onsubmit="return validatesign()">
+            <h1>SignUp</h1>
+            <input type="text" name="u" placeholder="Name" required>
+            <input type="tel" name="mob" placeholder="Mobile" minlength="10" maxlength="10" required>
+            <h3>Address:</h3>
+            <input type="text" name="area" placeholder="Area" required>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="email" name="mail" placeholder="E-mail" required>
+            <input type="password" name="pass1" placeholder="Password" id="p1" required>
+            <input type="password" name="pass2" placeholder="Confirm-Password" id="p2" required>
+            <input type="submit" name="" value="Register" id="submit">
+        </form>
+    </div>
+</body>
+</html>
